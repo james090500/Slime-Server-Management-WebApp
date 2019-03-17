@@ -24,9 +24,20 @@
       </div>
     </div>
   </div>
-  <div class="box">
-    <div class="row text-center">
-
+  <div class="row">
+    <div class="col-8">
+      <div class="box-card bg-warning">
+        <div class="box-title">Paper git-Paper-564 (MC: 1.13.2)</div>
+        <div class="box-subtitle">Server Version</div>
+        <div class="box-icon"><i class="fas fa-code-branch"></i></div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="box-card bg-danger">
+        <div class="box-title">$82,487,371.16</div>
+        <div class="box-subtitle">Total Economy</div>
+        <div class="box-icon"><i class="fas fa-dollar-sign"></i></div>
+      </div>
     </div>
   </div>
 @stop
