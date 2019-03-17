@@ -1,8 +1,7 @@
 @extends('layouts/default')
 
 @section('content')
-  <div class="box mb-0 min-page-height h-100">
-      <textarea id="logfile" readonly>
+  <div id="logfile" class="box">
 [18:20:14] [Server thread/INFO]: PLAYER » TheEmeraldFalcon: rip x2
 [18:20:17] [Server thread/INFO]: GUEST » Navoko: lol XD
 [18:20:27] [Craft Scheduler Thread - 1943/INFO]: * mthrs20 is now AFK
@@ -61,7 +60,16 @@
 [18:24:19] [Server thread/INFO]: SalamanderCmndr issued server command: /home
 [18:24:26] [Server thread/INFO]: TealKatt lost connection: Timed out
 [18:24:26] [Server thread/INFO]: [CapeCraft] TealKatt left the game
-      </textarea>
-      <script>$(document).ready(function(){$('#logfile').scrollTop($('#logfile')[0].scrollHeight);});</script>
   </div>
+  <div class="box mb-0">
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" />
+      </div>
+      <div class="col-1">
+        <button class="btn btn-dark"><i class="far fa-paper-plane fa-2x"></i></button>
+      </div>
+    </div>
+  </div>
+  <script>$("#logfile").scrollTop($("#logfile")[0].scrollHeight);</script>
 @stop

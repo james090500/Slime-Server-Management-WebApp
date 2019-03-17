@@ -29,6 +29,46 @@ body {
 }
 
 /**
+ * Home Page
+ */
+.playerlist {
+	list-style: none;
+	display: flex;
+	padding: 0;
+	overflow-x: scroll;
+}
+
+.playerlist > li {
+	margin: 1vh;
+}
+
+.playerlist > li img {
+	cursor: pointer;
+  transition: filter .2s ease-in-out;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.playerlist > li img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.playerlist::-webkit-scrollbar {
+    height: 10px;
+    background-color: transparent;
+}
+
+.playerlist::-webkit-scrollbar-thumb {
+	background-color: #909090;
+	border-radius: 10px;
+}
+
+.hide-scrollbar::-webkit-scrollbar-thumb {	
+	display: none;
+}
+
+/**
  * Useful Utils
  */
 
@@ -76,7 +116,9 @@ body {
  * Console Page
  */
 #logfile {
+	position: relative;
 	white-space: pre;
-	height: 100%;
 	width: 100%;
+	overflow: scroll;
+	height: 87vh;
 }

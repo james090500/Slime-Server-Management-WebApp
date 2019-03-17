@@ -40,4 +40,64 @@
       </div>
     </div>
   </div>
+  <div id="players" class="box">
+    <h3 class="text-center">Online Players</h3>
+    <ul class="playerlist hide-scrollbar">
+      <li>
+        <a href="/players/ba4161c0-3a42-496c-8ae0-7d13372f3371">
+          <img src="https://crafatar.com/avatars/ba4161c0-3a42-496c-8ae0-7d13372f3371?size=100&helm" data-toggle="tooltip" data-placement="bottom" title="james090500"/>
+        </a>
+      </li>
+      <li>
+        <a href="/players/ba4161c0-3a42-496c-8ae0-7d13372f3371">
+          <img src="https://crafatar.com/avatars/ba4161c0-3a42-496c-8ae0-7d13372f3371?size=100&helm" data-toggle="tooltip" data-placement="bottom" title="james090500"/>
+        </a>
+      </li>
+      <li>
+        <a href="/players/ba4161c0-3a42-496c-8ae0-7d13372f3371">
+          <img src="https://crafatar.com/avatars/ba4161c0-3a42-496c-8ae0-7d13372f3371?size=100&helm" data-toggle="tooltip" data-placement="bottom" title="james090500"/>
+        </a>
+      </li>
+      <li>
+        <a href="/players/ba4161c0-3a42-496c-8ae0-7d13372f3371">
+          <img src="https://crafatar.com/avatars/ba4161c0-3a42-496c-8ae0-7d13372f3371?size=100&helm" data-toggle="tooltip" data-placement="bottom" title="james090500"/>
+        </a>
+      </li>
+      <li>
+        <a href="/players/ba4161c0-3a42-496c-8ae0-7d13372f3371">
+          <img src="https://crafatar.com/avatars/ba4161c0-3a42-496c-8ae0-7d13372f3371?size=100&helm" data-toggle="tooltip" data-placement="bottom" title="james090500"/>
+        </a>
+      </li>
+      <li>
+        <a href="/players/ba4161c0-3a42-496c-8ae0-7d13372f3371">
+          <img src="https://crafatar.com/avatars/ba4161c0-3a42-496c-8ae0-7d13372f3371?size=100&helm" data-toggle="tooltip" data-placement="bottom" title="james090500"/>
+        </a>
+      </li>
+      <li>
+        <a href="/players/ba4161c0-3a42-496c-8ae0-7d13372f3371">
+          <img src="https://crafatar.com/avatars/ba4161c0-3a42-496c-8ae0-7d13372f3371?size=100&helm" data-toggle="tooltip" data-placement="bottom" title="james090500"/>
+        </a>
+      </li>
+      <li>
+        <a href="/players/ba4161c0-3a42-496c-8ae0-7d13372f3371">
+          <img src="https://crafatar.com/avatars/ba4161c0-3a42-496c-8ae0-7d13372f3371?size=100&helm" data-toggle="tooltip" data-placement="bottom" title="james090500"/>
+        </a>
+      </li>
+      <li>
+        <a href="/players/ba4161c0-3a42-496c-8ae0-7d13372f3371">
+          <img src="https://crafatar.com/avatars/ba4161c0-3a42-496c-8ae0-7d13372f3371?size=100&helm" data-toggle="tooltip" data-placement="bottom" title="james090500"/>
+        </a>
+      </li>
+      <script>
+        $('img').tooltip();
+        $('#players').on('mouseover', () => {
+          $('.playerlist').removeClass('hide-scrollbar');
+        });
+        $('#players').on('mouseout', () => {
+          $('.playerlist').addClass('hide-scrollbar');
+        });
+      </script>
+    </ul>
+  </div>
+  </div>
 @stop
