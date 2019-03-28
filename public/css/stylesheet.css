@@ -121,4 +121,9 @@ body {
 	width: 100%;
 	overflow: scroll;
 	height: 87vh;
+	display: grid;
+}
+
+#logfile > li {
+	list-style: none;
 }
