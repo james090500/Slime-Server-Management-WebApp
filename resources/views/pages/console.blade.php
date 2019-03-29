@@ -72,4 +72,36 @@
     </div>
   </div>
   <script>$("#logfile").scrollTop($("#logfile")[0].scrollHeight);</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/atmosphere/2.2.9/atmosphere.min.js"></script>
+  <script>
+
+    var socket = atmosphere;
+    var subSocket;
+    var transport;
+
+    var request = {
+      url: "http://127.0.0.1:8080/log",
+      contentType : "application/json",
+      logLevel : 'debug',
+      transport : 'websocket' ,
+      trackMessageLength : true,
+      reconnectInterval : 5000
+    };
+
+    request.onOpen = function(response) {
+      console.log(response);
+      transport = response.transport;
+    }
+
+    request.onError = function(response) {
+      console.log(response);
+    };
+
+    request.onTransportFailure = function(errorMsg, request) {
+      atmosphere.util.info(errorMsg);
+    }
+
+    subSocket = socket.subscribe(request);
+
+  </script>
 @stop
